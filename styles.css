@@ -1,0 +1,26 @@
+.schoolbell-regular {
+    font-family: "Schoolbell", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.jua-regular {
+    font-family: "Jua", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(255, 252, 245);
+    color:rgb(42, 42, 42);
+}
+
+.menu img {
+    width:30px;
+}
