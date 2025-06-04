@@ -11,34 +11,94 @@
     <title>Fluson's Page</title>
 </head>
 <body>
+    <img src="images/PopUp.png" id="image" class="hidden w-100">
+    <nav class="menu">
+        <a href=#home"><img src="images/icon.png" alt="icon"></a>
+        <ul>
+            <li><a href="#story">My Story</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </nav>
     <header>
-        <nav class="menu">
-            <a href=#home"><img src="images/icon.png" alt="icon"></a>
-            <ul>
-                <li><a href="#story">My Story</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#contact">Contact Me</a></li>
-            </ul>
-        </nav>
         <div class="banner">
             <div class="banner-text">
-                <h1>Who's a Good Boy?</h1>
-                <button>Find out!</button>
+                <h1>Who's a<br>Good Boy?</h1>
+                <button onclick="toggleImage()" class="w-100 mb-10" >Find out!</button>
+                
+                <div class="social">
+                    <a href="https://www.facebook.com/?locale=de_DE" target="_blank"><img src="images/facebook.png"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.png"></a>
+                    <a href="https://www.tiktok.com/explore" target="_blank"><img src="images/tiktok.png"></a>
+                </div>                
             </div>
             <img src="images/Header.png" alt="Fluson Profile">
-            <div class="social">
-                <a href=""><img src="images/facebook.png"></a>
-                <a href=""><img src="images/instagram.png"></a>
-                <a href=""><img src="images/tiktok.png"></a>
-            </div>
         </div>
     </header>
-    <main>
 
+    <main>
+        <section id="story">
+            <div class="mystory">
+                <h2>My Story</h2>
+                <div class="bioContainer">
+                    <img src="images/Fluson.jpeg" alt="Fluson adult">
+                    <div class="biography">
+                        <img src="images/FlusonBaby.jpg" alt="Fluson baby">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quisquam, dicta ipsum esse eaque a. Id dicta molestias consectetur itaque accusamus soluta error laboriosam labore. Voluptate vitae quidem beatae accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima vitae illum nesciunt assumenda veritatis architecto, culpa quaerat, aut, nostrum tempora optio deserunt omnis deleniti ex corporis nulla explicabo provident eum?</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo placeat perspiciatis nobis officia, ullam dolores harum perferendis fugiat facilis impedit quo nostrum fuga. Sapiente, pariatur eius aliquid eos suscipit tempore!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nihil blanditiis iure eos fuga quibusdam assumenda at voluptates provident facere. Qui, quis? Asperiores id praesentium doloribus rem eum. Nam, molestiae?Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae necessitatibus excepturi, tempora quisquam, dolore magnam, non aperiam quo illum explicabo doloremque earum impedit sit unde incidunt labore dignissimos corporis cupiditate!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="container">
+                <h2>My Skills</h2>
+                <div class="info">
+                    <div class="skill">
+                        <h3>Builder</h3>
+                        <img src="images/builder.jpeg" alt="builder">
+                    </div>
+                    <div class="skill">
+                        <h3>Climber</h3>
+                        <img src="images/climber.jpg" alt="climber">
+                    </div>
+                    <div class="skill">
+                        <h3>Gourmet Chef</h3>
+                        <img src="images/gourmetchef.jpg" alt="chef">
+                    </div>
+                    <div class="skill">
+                        <h3>Woodworker</h3>
+                        <img src="images/woodworker.jpeg" alt="woodworker">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <div class="galleryContainer">
+            <h2>Look at me!</h2>
+            <p>Gallery</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Write Me!</h2>
+            <form>
+
+            </form>
+        </section>
     </main>
     <footer>
-
+        <p>Copyright Yoshi Nagato 2025</p>
     </footer>
 </body>
+
+<script>
+    function toggleImage(){
+    document.querySelector('#image').classList.toggle('hidden');
+}
+</script>
 </html>
