@@ -125,9 +125,23 @@
             <div class="contact">
                 <h2>Write Me!</h2>
                 <div class="contactWrapper">    
-                    <form>
-                        <label for="name" id="name">Name</label>
-                        <input type="text" required>
+                    <form action="">
+                        <label for="fname" id="fname">Name</label><br>
+                        <input type="text" id="fname" name="fname" required> <br>
+                        <fieldset>
+                            <legend>What are you?</legend>
+                            <input type="radio" id="hooman" name="species" value="Hooman">
+                            <label for="hooman">Hooman</label>
+                            <input type="radio" id="dog" name="species" value="Fluson like">
+                            <label for="dog">Fluson like</label>
+                            <input type="radio" id="other" name="species" value="other">
+                            <label for="other">Other</label>
+                        </fieldset>
+                        <br>
+                        <legend>Tell me:</legend>
+                        <textarea></textarea>
+                        <br>
+                        <input type="submit" value="Submit" class="submit">
                     </form>
                 </div>
             </div>

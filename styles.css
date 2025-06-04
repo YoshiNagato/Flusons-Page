@@ -280,19 +280,64 @@ header {
 
 /* Contact */
 .contact {
-    border:solid red 1px;
+    /* border:solid red 1px; */
     display:flex;
     flex-direction: column;
     text-align: center;
     background-color: #ffcc00;
+    padding:50px;
 }
 .contactWrapper {
     background-color: rgb(255, 252, 245);
-    border:solid blue 1px;
+    /* border:solid blue 1px; */
+    padding:30px;
     width:60%;
     margin:auto;
+    margin-top:30px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #967800;
+}
+
+form>label {
+    font-weight: bold;
+    font-size:1.2em;
+}
+
+fieldset {
+    display:flex;
+    justify-content: center;
+    gap:30px;
+    padding:10px 0;
+    margin:10px 0;
+}
+
+textarea {
+    width:100%;
+    max-width:100%;
+    min-height:100px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px gray;
+}
+
+input {
+    border-radius: 5px;
+    padding:3px;
+    font-size: 1.1rem;
+    margin:5px;
+    box-shadow: 2px 2px 5px gray;
+}
+
+.submit {
+    margin-top:20px;
+    padding:10px 20px;
+    color:rgb(255, 252, 245);
+    background-color:#5599ff;
+    border-radius: 50px;
+    font-size: 1.2em;
+    font-weight: bold;
 }
 
 footer {
-    background-color: #ffcc00;
+    padding:30px;
+    text-align: center;
 }
