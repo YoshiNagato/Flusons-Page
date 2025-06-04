@@ -18,7 +18,7 @@
             <li><a href="#story">My Story</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#contact">Contact Me</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
     <header>
@@ -79,16 +79,58 @@
 
         <section id="gallery">
             <div class="galleryContainer">
-            <h2>Look at me!</h2>
-            <p>Gallery</p>
+                <h2>Look at me!</h2>
+                <p>(Ok and my Hooman)</p>
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 6</div>
+                        <img src="images/slide1.jpg" style="width:100%">
+                        <div class="text">Hiking with my Hooman</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 6</div>
+                        <img src="images/slide2.jpeg" style="width:100%">
+                        <div class="text">Sitting in Hooman flower thing</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 6</div>
+                        <img src="images/slide3.jpeg" style="width:100%">
+                        <div class="text">Goofin around</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">4 / 6</div>
+                        <img src="images/slide4.jpg" style="width:100%">
+                        <div class="text">I can hike faster than Hooman</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                        <div class="numbertext">5 / 6</div>
+                        <img src="images/slide5.jpg" style="width:100%">
+                        <div class="text">Need layers to stay warm</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                        <div class="numbertext">6 / 6</div>
+                        <img src="images/slide6.jpg" style="width:100%">
+                        <div class="text">Little Fluson</div>
+                    </div>
+                    <br>
+                </div>
             </div>
         </section>
 
         <section id="contact">
-            <h2>Write Me!</h2>
-            <form>
-
-            </form>
+            <div class="contact">
+                <h2>Write Me!</h2>
+                <div class="contactWrapper">    
+                    <form>
+                        <label for="name" id="name">Name</label>
+                        <input type="text" required>
+                    </form>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
@@ -99,6 +141,21 @@
 <script>
     function toggleImage(){
     document.querySelector('#image').classList.toggle('hidden');
+}
+
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+}
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
 }
 </script>
 </html>
