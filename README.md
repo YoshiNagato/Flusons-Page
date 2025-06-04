@@ -1,0 +1,1 @@
+Flusi, my dog, NEEDED his own Website to present his awesomeness. He is so chill, he doesn't really care about it but whatever. So here it is, a website for my dog!
