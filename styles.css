@@ -73,6 +73,7 @@ header {
     align-content: center;
     position:sticky;
     top:0;
+    z-index:1;
 }
 
 .menu ul {
@@ -234,6 +235,7 @@ header {
     align-content: center;
     text-align: center;
     margin:50px 30px;
+    z-index:-1;
 }
 
 /* Slideshow container */
