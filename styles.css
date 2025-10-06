@@ -150,7 +150,7 @@ header {
 
 #flusonProfile {
     height:50vh;
-    /* position:relative; */
+    position:relative;
     top:20vh;
 }
 
@@ -176,7 +176,8 @@ header {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    padding:5vw;
+    /* padding:5vw; */
+    margin:5vh 5vw 5vh 5vw;
 }
 
 .bioContainer {
@@ -225,21 +226,23 @@ header {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    padding:50px;
+    padding:5vh 5vw;
     text-align: center;
 }
 
 .info {
     display:flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     margin:50px 0;
+    gap:5vw;
 
 }
 
 .skill {
     display:flex;
     flex-direction: column;
-    gap:30px;
+    gap:0.5vh;
 }
 
 .skill img {
