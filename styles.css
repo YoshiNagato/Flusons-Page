@@ -101,7 +101,7 @@ header {
 .menu img { /*TODO Make image fit */
     display:flex;
     /* justify-content: flex-start; */
-    width: clamp(30px,4vh,40px);
+    width: clamp(30px,3vw,40px);
     margin: 10px;
 
 }
@@ -112,12 +112,13 @@ header {
     /* border:1px solid red; */
     height:70vh;
     display:flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
 }
 
 .banner-text{
     /* border:1px solid red; */
     display:flex;
+    width:50%;
     flex-direction: column;
     justify-content: space-between;
     align-content: center;
@@ -148,10 +149,17 @@ header {
 
 }
 
-#flusonProfile {
-    height:50vh;
+.flusonProfile {
+    display: flex;
+    width:50%;
+    /* height:50vh; */
+}
+
+.flusonProfile > img {  /* TODO Fixing the image */
+    object-fit:scale-down;
+    width:100%;
     position:relative;
-    top:20vh;
+    /* top:25%; */
 }
 
 .social {
