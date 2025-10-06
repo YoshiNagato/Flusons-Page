@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Delius&family=Fleur+De+Leah&family=Jua&family=Ribeye+Marrow&family=Schoolbell&display=swap" rel="stylesheet">
     <link rel="icon" type="image" href="images/paw-print.png">
+    <script src="script.js" defer></script>
     <title>Fluson's Page</title>
 </head>
 <body>
@@ -152,24 +153,7 @@
     </footer>
 </body>
 
-<script>
-    function toggleImage(){
-    document.querySelector('#image').classList.toggle('hidden');
-}
-
-let slideIndex = 0;
-showSlides();
-
-function showSlides() {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-    for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-}
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}
-    slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 5000); // Change image every 2 seconds
-}
-</script>
+<!-- <script>
+    
+</script> -->
 </html>
