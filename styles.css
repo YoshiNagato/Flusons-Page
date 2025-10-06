@@ -65,7 +65,7 @@ header {
 
 /* Menu */
 .menu {
-    height:60px;
+    height: clamp(50px,4vh,10vh );
     /* border:1px solid red; */
     background-color: rgba(85, 153, 255, 0.912);
     display:flex;
@@ -79,17 +79,18 @@ header {
 .menu ul {
     display:flex;
     justify-content: flex-end;
-    align-content: center;
-    margin:auto;
-    gap:40px;
+    align-self: center;
+    /* margin:auto; */
+    gap:2vw;
     list-style: none;
-    margin-right:50px;
+    margin-right:2vw;
 }
 
 .menu a {
     text-decoration: none;
     color:whitesmoke;
     font-weight: bold;
+    font-size: clamp(1rem,2vw,1.7rem)
 }
 
 .menu a:hover{
@@ -98,9 +99,10 @@ header {
 
 .menu img {
     display:flex;
-    justify-content: flex-start;
-    margin:15px;
-    width:30px;
+    /* justify-content: flex-start; */
+    width: clamp(30px,4vh,40px);
+    margin: 10px;
+
 }
 
 .banner {
