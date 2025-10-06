@@ -98,7 +98,7 @@ header {
 }
 
 
-.menu img {
+.menu img { /*TODO Make image fit */
     display:flex;
     /* justify-content: flex-start; */
     width: clamp(30px,4vh,40px);
@@ -365,9 +365,6 @@ input {
     font-weight: bold;
 }
 
-.submit :hover {
-    background-color: #0063f7;
-}
 
 footer {
     padding:30px;
