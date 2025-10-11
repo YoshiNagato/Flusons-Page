@@ -340,10 +340,10 @@ header {
     box-shadow: 5px 5px 5px #967800;
 }
 
-form>label {
+/* form>label {
     font-weight: bold;
     font-size:1.2rem;
-}
+} */
 
 /* fieldset {
     display:flex;
@@ -353,7 +353,7 @@ form>label {
     padding:10px 0;
     margin:10px 0;
 } */
-
+/* 
 .species {
     display:flex;
     flex-wrap: wrap;
@@ -373,7 +373,7 @@ textarea {
 .name {
     width:100%;
     border-radius: 5px;
-    /* padding:3px; */
+    padding:3px;
     font-size: 1.1rem;
     margin:5px 0;
     box-shadow: 2px 2px 5px gray;
@@ -387,7 +387,7 @@ textarea {
     border-radius: 50px;
     font-size: 1.2em;
     font-weight: bold;
-}
+} */
 
 
 footer {
