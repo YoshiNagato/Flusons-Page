@@ -133,8 +133,8 @@
                 <div class="contactWrapper">    
                     <form action="">
                         <label for="fname" id="fname">Name</label><br>
-                        <input type="text" id="fname" name="fname" required> <br>
-                        <fieldset>
+                        <input class="name" type="text" id="fname" name="fname" required> <br>
+                        <fieldset class="species">
                             <legend>What are you?</legend>
                             <input type="radio" id="hooman" name="species" value="Hooman">
                             <label for="hooman">Hooman</label>
@@ -144,6 +144,13 @@
                             <label for="other">Other</label>
                         </fieldset>
                         <br>
+                        <fieldset class="play">
+                            <legend>You wanna go play?</legend>
+                            <input type="checkbox" id="yes" name="play" value="Yes">
+                            <label for="yes">YES</label>
+                            <input type="checkbox" id="no" name="play" value="No">
+                            <label for="no">no</label>
+                        </fieldset>
                         <legend>Tell me:</legend>
                         <textarea></textarea>
                         <br>
