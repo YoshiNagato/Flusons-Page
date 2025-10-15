@@ -21,6 +21,14 @@
     box-sizing: border-box;
 }
 
+button,
+input,
+select,
+textarea {
+    font-family:inherit;
+    font-size: 100%;
+}
+
 body {
     background-color: rgb(255, 252, 245);
     color:rgb(42, 42, 42);
@@ -329,6 +337,16 @@ header {
     /* background-color: #ffcc00; */
     padding:5vh 5vw;
 }
+
+.contact h1 {
+    font-size: 3rem;
+    margin:20px;
+}
+
+.asterix {
+    font-size: 0.9rem;
+}
+
 .contactWrapper {
     background-color: rgb(255, 252, 245);
     /* border:solid blue 1px; */
@@ -339,6 +357,41 @@ header {
     border-radius: 20px;
     box-shadow: 5px 5px 5px #967800;
 }
+
+
+.contactInformation {
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin:20px;
+}
+
+.contactInformation > label {
+    margin:10px;
+}
+
+fieldset {
+    margin:10px 0;
+    padding:5px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+fieldset > ul {
+    display:flex;
+    list-style: none;
+}
+
+fieldset li {
+    padding:5px;
+}
+
+.toy {
+    margin:10px 0;
+}
+
 
 /* form>label {
     font-weight: bold;
